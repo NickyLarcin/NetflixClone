@@ -56,10 +56,11 @@ const Navbar = () => {
             items-center
             transition
             duration-500
+           
             ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}
 
             `}>
-                <img src="./images/logo.png" className="h-5 lg:h-8"></img>
+                <img src="./images/parodyLogo.png" className="h-10 lg:h-16"></img>
                 <div className="
                 flex-row
                 ml-8
