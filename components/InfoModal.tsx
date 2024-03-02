@@ -49,7 +49,8 @@ const InfoModal : React.FC<InfoModalProps> = ({visible, onClose}) => {
             <div className="
             relative
             w-auto
-            mx-auto
+            mx-5
+            sm:mx-auto
             max-w-3xl
             rounded-md
             overflow-hidden">
@@ -99,8 +100,8 @@ const InfoModal : React.FC<InfoModalProps> = ({visible, onClose}) => {
                         bottom-[10%]
                         left-10
                         ">
-                            <p className="text-white text-3xl md:text-4hl
-                            h-full lg:text-5xl font-bold mb-80 ">
+                            <p className="text-white text-2xl md:text-4hl
+                            h-full lg:text-5xl font-bold  mb-60 sm:mb-80 ">
                                 {data?.title}
                             </p>
                             <div className="flex flex-row gap-4 items-center"> 
@@ -115,16 +116,16 @@ const InfoModal : React.FC<InfoModalProps> = ({visible, onClose}) => {
                     </div>
 
                     <div className="px-12 py-8">
-                        <p className="text-green-400 font-semibold text-lg">
+                        <p className="text-green-400 font-semibold text-sm md:text-lg">
                             New
                         </p>
-                        <p className="text-white text-lg">
+                        <p className="text-white text-sm md:text-lg">
                             {data?.duration}
                         </p>
-                        <p className="text-white text-lg">
+                        <p className="text-white text-sm md:text-lg">
                             {data?.genre}
                         </p>
-                        <p className="text-white text-lg">
+                        <p className="text-white text-sm md:text-lg">
                             {data?.description}
                         </p>
 

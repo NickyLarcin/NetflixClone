@@ -61,8 +61,9 @@ const Auth = () => {
           <img src="/images/parodyLogo.png" alt="logo" className="h-20 absolute"></img>
         </nav>
         <div className="flex justify-center mt-20">
-          <div className="bg-black bg-opacity-70 px-16 py-16 self-center mt-2 lg:w-2/5 lg:max-w-md rounded-md w-3/5 sm:py-4">
-            <h2 className="text-white text-4xl mb-8 font-semibold">{variant === "login" ? "Sign in" : "Register"}</h2>
+          <div className="bg-black bg-opacity-70 px-8 py-10 self-center mt-2 lg:w-2/5 
+          lg:max-w-md rounded-md w-3/5 sm:py-4 sm:px-16 w-80 sm:w-auto">
+            <h2 className="text-white text-3xl sm:text-4xl mb-8 font-semibold">{variant === "login" ? "Sign in" : "Register"}</h2>
             <div className="flex flex-col gap-4">
               {variant === "register" && (
                 <Input

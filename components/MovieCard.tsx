@@ -41,8 +41,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                 transition
                 duration-200
                 z-10
-                invisible
-                sm:visible
+                visible
                 delay-300
                 w-full
                 scale-0
@@ -72,10 +71,12 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                     <div className="flex flex-row items-center gap-3">
 
                         <div className="cursor-pointer
-                        w-6
-                        h-6
-                        lg:w-10
-                        lg:h-10
+                        w-4
+                        h-4
+                        sm:w-6
+                        sm:h-6
+                        md:w-10
+                        md:h-10
                         bg-neutral-300
                         rounded-full
                         flex
@@ -85,16 +86,18 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                         hover:bg-neutral-500
                         "
                         onClick={()=> router.push(`/watch/${data?.id}`)}>
-                            <IoPlayCircleOutline size = {30}/>
+                            <IoPlayCircleOutline size={20} />
 
                         </div>
                         <FavoriteButton
                         movieId = {data?.id} />
                         <div className="cursor-pointer
-                        w-6
-                        h-6
-                        lg:w-10
-                        lg:h-10
+                        w-4
+                        h-4
+                        sm:w-6
+                        sm:h-6
+                        md:w-10
+                        md:h-10
                         bg-neutral-300
                         rounded-full
                         flex
@@ -104,7 +107,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                         hover:bg-neutral-500
                         "
                         onClick={()=>{openModal(data?.id)}}>
-                            <LuInfo className="text-xs md:text-lg" />
+                            <LuInfo size={20} />
 
                         </div>
                         

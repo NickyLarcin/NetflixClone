@@ -29,18 +29,19 @@ const Billboard = () => {
             
             ></video>
 
-            <div className="absolute top-[30%] md:top-[40%] ml-4 md:ml-16">
-                <p className="text-white text-2xl md:text-5xl h-full w-[50%] 
+            <div className="absolute top-[40%] sm:top-[60%] md:top-[60%] ml-4 md:ml-16">
+                <p className="text-white text-1xl sm:text-2xl md:text-4xl h-full w-[50%] 
                 lg:text-6xl font-bold drop-shadow-xl">
                     {data?.title}
                 </p>
                 <p className="text-white
-                text-[8-px]
+                text-[12px]
+                sm:text-md
                 md:text-lg
-                mt-3
+                sm:mt-3
                 md:mt-8
                 w-[90%]
-                md:w-[80%]
+                md:w-[90%]
                 lg:w-[50%]
                 drop-shadow-xl ">
                     {data?.description}

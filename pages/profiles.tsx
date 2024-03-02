@@ -31,10 +31,10 @@ const Profiles = () => {
                 <h1 className="text-white text-3xl md:text-6xl text-center">Who is watching ?</h1>
                 <div className="flex items-center justify-center gap-8 mt-10">
                     <div className="" onClick={()=>{router.push('/')}}>
-                        <div className="group flex-row w-44 mx-auto">
+                        <div className="group flex-row w-20 sm:w-44 mx-auto">
                             <div className="
-                            w-44
-                            h-44
+                            w-20 sm:w-44
+                            h-20 sm:h-44
                             rounded-md
                             flex
                             items-center
